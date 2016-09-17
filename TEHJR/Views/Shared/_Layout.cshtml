@@ -14,7 +14,7 @@
     <div id="main-content" class="container">
         <div class="body-content">
             <div class="row">
-                <div id="content" class="col-md-6 col-md-offset-3 col-xs-10">
+                <div id="content" class="col-md-8 col-md-offset-2 col-xs-10">
                     @RenderBody()
                 </div>
                 <div class="social col-md-1 col-xs-2">
@@ -25,14 +25,18 @@
             <div class="row row-nav">
                 <div class="col-md-6 col-md-offset-3 col-xs-10">
                     <nav class="btn-group nav-btns">
-                        <button class="btn btn-default" onclick="Home()">Home</button>
-                        <button class="btn btn-default" onclick="About()">About</button>
-                        <button class="btn btn-info" onclick="Contact()">Contact</button>
+                        <button id="home" class="btn" onclick="Home()">Home</button>
+                        <button id="about" class="btn" onclick="About()">About</button>
+                        <button id="contact" class="btn" onclick="Contact()">Contact</button>
                     </nav>
                 </div>
                 <div class="shadow"></div>
             </div>
         </div>
+    </div>
+    <div id="video-container">
+        <button onclick="closeVideo()">X</button>
+        <video id="vidya" src="" typeof="video/WebM" controls></video>
     </div>
 
     @Scripts.Render("~/Scripts/getPartialViews.js")

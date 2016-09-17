@@ -169,6 +169,14 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Partials\About.cshtml" />
     <Content Include="Views\Partials\MyInfo.cshtml" />
+    <Content Include="Videos\fjs-fisken.webm" />
+    <Content Include="Videos\fjs-oslo.webm" />
+    <Content Include="Videos\regex-search.webm" />
+    <Content Include="Videos\unity.webm" />
+    <Content Include="Videos\node-express.webm" />
+    <Content Include="Videos\mongo.webm" />
+    <Content Include="Videos\json-handlebars.webm" />
+    <Content Include="Videos\api-call-dynamic-content.webm" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

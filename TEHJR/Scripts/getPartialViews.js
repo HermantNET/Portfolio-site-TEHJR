@@ -14,6 +14,8 @@ function Home() {
             location.hash = "/";
         });
     }, 5000);
+    $(".btn-current").removeClass("btn-current");
+    $("#home").addClass("btn-current");
 }
 function About() {
     loadingRing();
@@ -21,6 +23,8 @@ function About() {
         selector.html(data);
         location.hash = "/Home/About";
     });
+    $(".btn-current").removeClass("btn-current");
+    $("#about").addClass("btn-current");
 }
 function Contact() {
     loadingRing();
@@ -28,4 +32,17 @@ function Contact() {
         selector.html(data);
         location.hash = "/Home/Contact";
     });
+    $(".btn-current").removeClass("btn-current");
+    $("#contact").addClass("btn-current");
+}
+
+function closeVideo() {
+    $("#video-container").fadeOut("fast", () => { });
+}
+
+function openVideo(_src) {
+    $("#video-container").fadeIn("fast", () => { });
+    var vid = $("#vidya");
+    vid.attr('src', _src);
+    vid.load();
 }

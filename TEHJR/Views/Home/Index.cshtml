@@ -7,35 +7,34 @@
 
 <div>
     <h3>Who am I?</h3>
+    <hr />
     <p>I am an aspiring Full Stack developer. I have a passion for developing web applications and have dreams of traveling the world.</p>
 </div>
 
 <div>
     <h3>What do I know?</h3>
+    <hr />
     <h4>Programming Languages</h4>
-    <div class="row">
-        <div class="col-sm-4">
-            <p class="">C#</p>
-        </div>
-        <div class="col-sm-4">
-            <p class="">Javascript</p>
-        </div>
-        <div class="col-sm-4">
-            <p class="">Visual Basic.NET</p>
-        </div>
+    <div>
+        <ul class="list-inline list-spread">
+            <li class="panel panel-title">C#</li>
+            <li class="panel panel-title">Javascript</li>
+            <li class="panel panel-title">VB.NET</li>
+        </ul>
     </div>
     <br />
-    <div class="row">
-        <div class="col-md-4">
-            <h4>The Big Ones</h4>
+    <h4>Technologies</h4>
+    <div class="row list-group">
+        <div class="col-md-4 list-group-item">
+            <h4 class="list-group-item-heading">The Big Ones</h4>
             <ul>
                 <li>.NET</li>
                 <li>ASP.NET 4.* & Core</li>
                 <li>Node.js</li>
             </ul>
         </div>
-        <div class="col-md-4">
-            <h4>The Middle Ones</h4>
+        <div class="col-md-4 list-group-item">
+            <h4 class="list-group-item-heading">The Middle Ones</h4>
             <ul>
                 <li>JQuery</li>
                 <li>React/Redux</li>
@@ -49,8 +48,8 @@
                 <li>Tape</li>
             </ul>
         </div>
-        <div class="col-md-4">
-            <h4>The Little Ones</h4>
+        <div class="col-md-4 list-group-item">
+            <h4 class="list-group-item-heading">The Little Ones</h4>
             <ul>
                 <li>JSON/XML</li>
                 <li>Functional Javascript</li>
@@ -64,7 +63,27 @@
 
 <div>
     <h3>What have I done?</h3>
-    <ul>
+    <h5>double click on a video for fullscreen view.</h5>
+    <div id="projects">
+        <div class="project">
+            <video src="~/Videos/fjs-fisken.webm" type="video/WebM" ondblclick="openVideo(this.src)">Your browser doesn't support HTML5 video.</video>
+            <h4>Functional JS - Recursion</h4>
+            <p>Creates a new string from every multiple of two from an array of items.</p>
+        </div>
+        <div class="project">
+            <video></video>
+            <h4></h4>
+            <p></p>
+        </div>
+        <div class="project">
+            <video></video>
+            <h4></h4>
+            <p></p>
+        </div>
+    </div>
+</div>
 
-    </ul>
+<div>
+    <h3>What am I working on?</h3>
+    <ul></ul>
 </div>
