@@ -1,0 +1,153 @@
+﻿body {
+    background-color: #333333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    padding: 0.2em;
+    color: #648C8C;
+}
+
+a:visited {
+    color: #3E5E5E;
+}
+
+.right-side {
+    margin: 1em;
+    float: right;
+    text-align: center;
+}
+
+/*Content settings*/
+#content {
+    background-color: #93BFBF;
+    padding: 0;
+    border: 1em solid black;
+    height: 85vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#content>div {
+    color: #ACDFAC;
+    padding: 1em;
+}
+
+#content>div:nth-of-type(1) {
+    color: #3E5E5E;
+}
+
+#content>div:nth-of-type(1n+2) {
+    background-color: #537D53;
+}
+
+#content>div:nth-of-type(2n+0) {
+    background-color: #669966;
+}
+
+#content>h2, #content>h3 {
+    margin: 1em;
+    text-align: justify;
+}
+
+#content>p {
+    color: #ACDFAC;
+    margin: 0;
+    padding: 1em;
+    line-height: 175%;
+}
+
+#content>p:nth-child(odd) {
+    background-color: #669966;
+}
+
+#content>p:nth-child(even) {
+    background-color: #537D53;
+}
+
+#content>div>div:nth-of-type(odd) {
+    background-color: #375A37;
+}
+
+/*Nav buttons settings*/
+.nav-btns {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-btns>button {
+    font-size: 1.7em;
+}
+
+.row-nav::after {
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+    top: -0.8em;
+    content: "";
+    width: 60%;
+    height: 2.5em;
+    background: radial-gradient(black 0%, transparent 60%);
+}
+
+/*Social Links*/
+.social {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20%;
+    background-color: black;
+}
+
+.social>a {
+    margin: 0.5em 0;
+    border-radius: 20%;
+    padding: 0.5em;
+    display: inline-block;
+    background-color:  #537D53;
+}
+
+.social>a:hover {
+    background-color: #669966;
+}
+
+.social>a>img {
+    width: 100%;
+}
+
+/*Contact Page*/
+#contact-page>.title {
+    padding-top: 10vh;
+    text-align: center;
+}
+
+#contact-page>.info {
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.uil-ring {
+    display: none;
+}
+
+/*Webkit stuff for them fancy chrome visuals*/
+::-webkit-scrollbar {
+    background-color: grey;
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 1px 0 4px rgba(0,0,0,1);
+}
+
+::-webkit-scrollbar-thumb {
+    height: 5px;
+    background-color: black;
+}
+
+@media (max-width: 970px) {
+    .row-nav::after {
+        margin-left: -3%;
+        width: 90%;
+    }
+}
