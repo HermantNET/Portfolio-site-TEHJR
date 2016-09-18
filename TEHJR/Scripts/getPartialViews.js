@@ -3,17 +3,15 @@ var loading = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" pre
 
 function loadingRing() {
     selector.html(loading);
-    $(".uil-ring").fadeIn("slow", () => {});
+    $(".uil-ring").fadeIn("slow", () => { });
 }
 
 function Home() {
     loadingRing();
-    setTimeout(function () {
-        $.get("", (data) => {
-            selector.html(data);
-            location.hash = "/";
-        });
-    }, 5000);
+    $.get("", (data) => {
+        selector.html(data);
+        location.hash = "/";
+    });
     $(".btn-current").removeClass("btn-current");
     $("#home").addClass("btn-current");
 }
