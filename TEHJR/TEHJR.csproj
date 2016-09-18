@@ -159,6 +159,22 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Videos\api-call-dynamic-content.mp4" />
+    <Content Include="Videos\fjs-fisken.mp4" />
+    <Content Include="Videos\fjs-oslo.mp4" />
+    <Content Include="Videos\json-handlebars.mp4" />
+    <Content Include="Videos\mongo.mp4" />
+    <Content Include="Videos\node-express.mp4" />
+    <Content Include="Videos\Posters\api.png" />
+    <Content Include="Videos\Posters\fisken.png" />
+    <Content Include="Videos\Posters\json.png" />
+    <Content Include="Videos\Posters\mongo.png" />
+    <Content Include="Videos\Posters\node.png" />
+    <Content Include="Videos\Posters\oslo.png" />
+    <Content Include="Videos\Posters\regex.png" />
+    <Content Include="Videos\Posters\unity.png" />
+    <Content Include="Videos\regex-search.mp4" />
+    <Content Include="Videos\unity.mp4" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

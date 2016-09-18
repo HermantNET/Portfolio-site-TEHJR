@@ -36,11 +36,27 @@ function Contact() {
 
 function closeVideo() {
     $("#video-container").fadeOut("fast", () => { });
+    $("#close").fadeOut("fast", () => { });
 }
 
-function openVideo(_src) {
+function openVideo(_src, _type) {
+    var canPlay = false;
+    var v = $('#vidya');
+    if (v.canPlayType && v.canPlayType('video/WebM').replace(/no/, '')) {
+        canPlay = true;
+    }
+
+    $("#close").fadeIn("fast", () => { });
     $("#video-container").fadeIn("fast", () => { });
     var vid = $("#vidya");
-    vid.attr('src', _src);
+
+    if (canPlay) {
+        vid.attr('src', _src + "WebM");
+        vid.attr('type', "video/WebM");
+    } else {
+        vid.attr('src', _src + "mp4");
+        vid.attr('type', "video/mp4");
+    }
+
     vid.load();
 }
